@@ -1,0 +1,876 @@
+[2018-07-03 21:38:54,788 INFO] From: data/data.vocab.pt
+[2018-07-03 21:38:54,789 INFO] 	* source vocab: 1002 words
+[2018-07-03 21:38:54,789 INFO] 	* target vocab: 1004 words
+[2018-07-03 21:43:55,534 INFO] Got 2196007 encryption embeddings from embeddings/glove.840B.300d.txt
+[2018-07-03 21:44:18,477 INFO] Got 200000 decryption embeddings from embeddings/de.emb.txt
+[2018-07-03 21:44:18,970 INFO] 
+Matching: 
+[2018-07-03 21:44:18,971 INFO] 	* enc: 997 match, 5 missing, (99.50%)
+[2018-07-03 21:44:18,971 INFO] 	* dec: 556 match, 448 missing, (55.38%)
+[2018-07-03 21:44:18,971 INFO] 
+Filtered embeddings:
+[2018-07-03 21:44:19,011 INFO] 
+Saving embedding as:
+	* enc: data/german_embs_from_artetxe.enc.pt
+	* dec: data/german_embs_from_artetxe.dec.pt
+[2018-07-03 21:44:19,084 INFO] 
+Done.
+[2018-07-04 11:25:52,448 INFO] From: data/data.vocab.pt
+[2018-07-04 11:25:52,448 INFO] 	* source vocab: 1002 words
+[2018-07-04 11:25:52,449 INFO] 	* target vocab: 1004 words
+[2018-07-04 11:31:51,928 INFO] From: data/data.vocab.pt
+[2018-07-04 11:31:51,929 INFO] 	* source vocab: 1002 words
+[2018-07-04 11:31:51,929 INFO] 	* target vocab: 1004 words
+[2018-07-04 11:34:30,299 INFO] From: data/data.vocab.pt
+[2018-07-04 11:34:30,300 INFO] 	* source vocab: 1002 words
+[2018-07-04 11:34:30,300 INFO] 	* target vocab: 1004 words
+[2018-07-04 11:37:10,750 INFO] From: data/data.vocab.pt
+[2018-07-04 11:37:10,750 INFO] 	* source vocab: 1002 words
+[2018-07-04 11:37:10,751 INFO] 	* target vocab: 1004 words
+[2018-07-04 11:42:25,705 INFO] From: data/data.vocab.pt
+[2018-07-04 11:42:25,705 INFO] 	* source vocab: 1002 words
+[2018-07-04 11:42:25,706 INFO] 	* target vocab: 1004 words
+[2018-07-04 11:43:20,050 INFO] Got 2195884 encryption embeddings from embeddings/glove.840B.reduced.50d.txt
+[2018-07-04 11:43:24,714 INFO] Got 200000 decryption embeddings from embeddings/de.emb.reduced.50d.txt
+[2018-07-04 11:43:24,943 INFO] 
+Matching: 
+[2018-07-04 11:43:24,964 INFO] 	* enc: 997 match, 5 missing, (99.50%)
+[2018-07-04 11:43:24,964 INFO] 	* dec: 556 match, 448 missing, (55.38%)
+[2018-07-04 11:43:24,964 INFO] 
+Filtered embeddings:
+[2018-07-04 11:43:24,994 INFO] 
+Saving embedding as:
+	* enc: data/german_embs_from_artetxe_50d.enc.pt
+	* dec: data/german_embs_from_artetxe_50d.dec.pt
+[2018-07-04 11:43:25,068 INFO] 
+Done.
+[2018-07-04 13:56:58,513 INFO] From: data/data.vocab.pt
+[2018-07-04 13:56:58,513 INFO] 	* source vocab: 1002 words
+[2018-07-04 13:56:58,513 INFO] 	* target vocab: 1004 words
+[2018-07-04 14:02:55,134 INFO] Got 2196007 encryption embeddings from embeddings/glove.840B.300d.txt
+[2018-07-04 14:08:56,540 INFO] Got 200000 decryption embeddings from embeddings/de.emb.300d.txt
+[2018-07-04 14:08:57,180 INFO] 
+Matching: 
+[2018-07-04 14:08:57,180 INFO] 	* enc: 997 match, 5 missing, (99.50%)
+[2018-07-04 14:08:57,180 INFO] 	* dec: 556 match, 448 missing, (55.38%)
+[2018-07-04 14:08:57,181 INFO] 
+Filtered embeddings:
+[2018-07-04 14:08:57,228 INFO] 
+Saving embedding as:
+	* enc: embeddings/CHECKING.enc.pt
+	* dec: embeddings/CHECKING.dec.pt
+[2018-07-04 14:08:57,304 INFO] 
+Done.
+[2018-07-04 14:27:59,576 INFO] From: data/data.vocab.pt
+[2018-07-04 14:27:59,576 INFO] 	* source vocab: 1002 words
+[2018-07-04 14:27:59,576 INFO] 	* target vocab: 1004 words
+[2018-07-04 14:32:17,542 INFO] Got 2196007 encryption embeddings from embeddings/glove.840B.300d.txt
+[2018-07-04 14:32:39,318 INFO] Got 200000 decryption embeddings from embeddings/de.emb.300d.txt
+[2018-07-04 14:33:47,134 INFO] 
+Matching: 
+[2018-07-04 14:33:47,136 INFO] 	* enc: 997 match, 5 missing, (99.50%)
+[2018-07-04 14:33:47,136 INFO] 	* dec: 556 match, 448 missing, (55.38%)
+[2018-07-04 14:33:47,136 INFO] 
+Filtered embeddings:
+[2018-07-04 14:33:51,263 INFO] 
+Saving embedding as:
+	* enc: embeddings/CHECKING.enc.pt
+	* dec: embeddings/CHECKING.dec.pt
+[2018-07-04 14:33:52,711 INFO] 
+Done.
+[2018-07-04 14:41:36,187 INFO] From: data/data.vocab.pt
+[2018-07-04 14:41:36,187 INFO] 	* source vocab: 1002 words
+[2018-07-04 14:41:36,187 INFO] 	* target vocab: 1004 words
+[2018-07-04 14:45:56,357 INFO] Got 2196007 encryption embeddings from embeddings/glove.840B.300d.txt
+[2018-07-04 14:46:18,330 INFO] Got 200000 decryption embeddings from embeddings/de.emb.300d.txt
+[2018-07-04 14:46:18,539 INFO] 
+Matching: 
+[2018-07-04 14:46:18,567 INFO] 	* enc: 997 match, 5 missing, (99.50%)
+[2018-07-04 14:46:18,568 INFO] 	* dec: 556 match, 448 missing, (55.38%)
+[2018-07-04 14:46:18,568 INFO] 
+Filtered embeddings:
+[2018-07-04 14:46:18,583 INFO] 	* enc: torch.Size([1002, 300])
+[2018-07-04 14:46:18,583 INFO] 	* dec: torch.Size([1004, 300])
+[2018-07-04 14:46:18,583 INFO] 
+Saving embedding as:
+	* enc: embeddings/CHECKING.enc.pt
+	* dec: embeddings/CHECKING.dec.pt
+[2018-07-04 14:46:18,756 INFO] 
+Done.
+[2018-07-06 13:47:19,200 INFO] From: data/data.vocab.pt
+[2018-07-06 13:47:19,200 INFO] 	* source vocab: 1002 words
+[2018-07-06 13:47:19,201 INFO] 	* target vocab: 1004 words
+[2018-07-06 13:51:26,388 INFO] Got 2196007 encryption embeddings from embeddings/glove.840B.300d.txt
+[2018-07-06 13:51:47,343 INFO] Got 200000 decryption embeddings from embeddings/de.emb.300d.txt
+[2018-07-06 14:00:45,532 INFO] From: data/data.vocab.pt
+[2018-07-06 14:00:45,532 INFO] 	* source vocab: 1002 words
+[2018-07-06 14:00:45,532 INFO] 	* target vocab: 1004 words
+[2018-07-06 14:01:04,226 INFO] From: data/data.vocab.pt
+[2018-07-06 14:01:04,226 INFO] 	* source vocab: 1002 words
+[2018-07-06 14:01:04,226 INFO] 	* target vocab: 1004 words
+[2018-07-06 14:01:27,357 INFO] Got 200000 encryption embeddings from embeddings/de.emb.300d.txt
+[2018-07-06 14:01:50,392 INFO] Got 200000 decryption embeddings from embeddings/de.emb.300d.txt
+[2018-07-06 14:02:24,817 INFO] 
+Matching: 
+[2018-07-06 14:02:24,818 INFO] 	* enc: 799 match, 203 missing, (79.74%)
+[2018-07-06 14:02:24,818 INFO] 	* dec: 556 match, 448 missing, (55.38%)
+[2018-07-06 14:02:24,818 INFO] 
+Filtered embeddings:
+[2018-07-06 14:02:24,818 INFO] 	* enc: torch.Size([1002, 300])
+[2018-07-06 14:02:24,819 INFO] 	* dec: torch.Size([1004, 300])
+[2018-07-06 14:02:24,819 INFO] 
+Saving embedding as:
+	* enc: embeddings/CHECKING.enc.pt
+	* dec: embeddings/CHECKING.dec.pt
+[2018-07-06 14:02:24,888 INFO] 
+Done.
+[2018-07-06 14:10:50,381 INFO] From: data/data.vocab.pt
+[2018-07-06 14:10:50,381 INFO] 	* source vocab: 1002 words
+[2018-07-06 14:10:50,381 INFO] 	* target vocab: 1004 words
+[2018-07-06 14:15:13,237 INFO] Got 2196007 encryption embeddings from embeddings/glove.840B.300d.txt
+[2018-07-06 14:15:34,760 INFO] Got 200000 decryption embeddings from embeddings/de.emb.300d.txt
+[2018-07-06 14:15:34,941 INFO] 
+Matching: 
+[2018-07-06 14:15:34,970 INFO] 	* enc: 997 match, 5 missing, (99.50%)
+[2018-07-06 14:15:34,970 INFO] 	* dec: 556 match, 448 missing, (55.38%)
+[2018-07-06 14:15:34,970 INFO] 
+Filtered embeddings:
+[2018-07-06 14:15:34,982 INFO] 	* enc: torch.Size([1002, 300])
+[2018-07-06 14:15:34,982 INFO] 	* dec: torch.Size([1004, 300])
+[2018-07-06 14:15:34,982 INFO] 
+Saving embedding as:
+	* enc: data/german_embs_artetxe_random_300d.enc.pt
+	* dec: data/german_embs_artetxe_random_300d.dec.pt
+[2018-07-06 14:15:35,080 INFO] 
+Done.
+[2018-07-11 16:50:18,916 INFO] From: WMT17_news_data/BASELINE_europarl.50l.bpe_together.vocab.pt
+[2018-07-11 16:50:18,916 INFO] 	* source vocab: 25125 words
+[2018-07-11 16:50:18,916 INFO] 	* target vocab: 40857 words
+[2018-07-11 16:50:22,690 INFO] Got 21248 encryption embeddings from WMT17_news_data/word2vec_embeddings/pre_train_embe/europarl/europarl.500d.en.txt
+[2018-07-11 16:50:28,831 INFO] Got 34084 decryption embeddings from WMT17_news_data/word2vec_embeddings/pre_train_embe/europarl/europarl.500d.de.txt
+[2018-07-11 16:50:30,679 INFO] 
+Matching: 
+[2018-07-11 16:50:30,680 INFO] 	* enc: 16016 match, 9109 missing, (63.75%)
+[2018-07-11 16:50:30,680 INFO] 	* dec: 24929 match, 15928 missing, (61.02%)
+[2018-07-11 16:50:30,680 INFO] 
+Filtered embeddings:
+[2018-07-11 16:50:30,680 INFO] 	* enc: torch.Size([25125, 500])
+[2018-07-11 16:50:30,681 INFO] 	* dec: torch.Size([40857, 500])
+[2018-07-11 16:50:30,681 INFO] 
+Saving embedding as:
+	* enc: WMT17_news_data/FIRST_EMB_EUROPARL_REG/europarl_embs.enc.pt
+	* dec: WMT17_news_data/FIRST_EMB_EUROPARL_REG/europarl_embs.dec.pt
+[2018-07-11 16:50:31,934 INFO] 
+Done.
+[2018-07-11 20:54:27,029 INFO] From: WMT17_news_data/BASELINE_europarl.50l.bpe_together.vocab.pt
+[2018-07-11 20:54:27,029 INFO] 	* source vocab: 25125 words
+[2018-07-11 20:54:27,029 INFO] 	* target vocab: 40857 words
+[2018-07-11 20:54:31,208 INFO] Got 23328 encryption embeddings from WMT17_news_data/word2vec_embeddings/pre_train_embe/europarl/europarl.500d.en.txt
+[2018-07-11 20:54:38,106 INFO] Got 37942 decryption embeddings from WMT17_news_data/word2vec_embeddings/pre_train_embe/europarl/europarl.500d.de.txt
+[2018-07-11 20:54:39,888 INFO] 
+Matching: 
+[2018-07-11 20:54:39,889 INFO] 	* enc: 16780 match, 8345 missing, (66.79%)
+[2018-07-11 20:54:39,889 INFO] 	* dec: 27561 match, 13296 missing, (67.46%)
+[2018-07-11 20:54:39,889 INFO] 
+Filtered embeddings:
+[2018-07-11 20:54:39,889 INFO] 	* enc: torch.Size([25125, 500])
+[2018-07-11 20:54:39,890 INFO] 	* dec: torch.Size([40857, 500])
+[2018-07-11 20:54:39,890 INFO] 
+Saving embedding as:
+	* enc: WMT17_news_data/FIRST_EMB_EUROPARL_REG/europarl_embs.enc.pt
+	* dec: WMT17_news_data/FIRST_EMB_EUROPARL_REG/europarl_embs.dec.pt
+[2018-07-11 20:54:41,168 INFO] 
+Done.
+[2018-08-13 16:13:53,864 INFO] From: WMT17_news_data/BASELINE_europarl.50l.vocab.pt
+[2018-08-13 16:13:53,864 INFO] 	* source vocab: 50002 words
+[2018-08-13 16:13:53,864 INFO] 	* target vocab: 50004 words
+[2018-08-13 16:17:30,141 INFO] Got 1999995 encryption embeddings from embeddings/crawl-300d-2M.vec
+[2018-08-13 17:22:39,887 INFO] From: WMT17_news_data/BASELINE_europarl.50l.vocab.pt
+[2018-08-13 17:22:39,887 INFO] 	* source vocab: 50002 words
+[2018-08-13 17:22:39,887 INFO] 	* target vocab: 50004 words
+[2018-08-13 17:27:02,826 INFO] Got 1999995 encryption embeddings from embeddings/crawl-300d-2M.vec
+[2018-08-13 17:31:40,682 INFO] Got 2000000 decryption embeddings from embeddings/cc.de.300.vec
+[2018-08-13 17:31:42,019 INFO] 
+Matching: 
+[2018-08-13 17:31:42,019 INFO] 	* enc: 47003 match, 2999 missing, (94.00%)
+[2018-08-13 17:31:42,020 INFO] 	* dec: 47455 match, 2549 missing, (94.90%)
+[2018-08-13 17:31:42,020 INFO] 
+Filtered embeddings:
+[2018-08-13 17:31:42,020 INFO] 	* enc: torch.Size([50002, 300])
+[2018-08-13 17:31:42,020 INFO] 	* dec: torch.Size([50004, 300])
+[2018-08-13 17:31:42,020 INFO] 
+Saving embedding as:
+	* enc: WMT17_news_data/BASELINE_WORDS/fasttext_embs.enc.pt
+	* dec: WMT17_news_data/BASELINE_WORDS/fasttext_embs.dec.pt
+[2018-08-13 17:31:47,909 INFO] 
+Done.
+[2018-09-10 10:38:13,794 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-10 10:38:13,795 INFO] 	* source vocab: 50002 words
+[2018-09-10 10:38:13,795 INFO] 	* target vocab: 50004 words
+[2018-09-10 10:42:12,082 INFO] Got 1999995 encryption embeddings from embeddings/fasttext.en.vec
+[2018-09-11 10:27:54,719 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-11 10:27:54,719 INFO] 	* source vocab: 50002 words
+[2018-09-11 10:27:54,719 INFO] 	* target vocab: 50004 words
+[2018-09-11 10:32:37,438 INFO] Got 1999995 encryption embeddings from embeddings/fasttext.en.vec
+[2018-09-11 10:37:29,321 INFO] Got 2000000 decryption embeddings from embeddings/fasttext.fr.vec
+[2018-09-11 10:37:30,903 INFO] 
+Matching: 
+[2018-09-11 10:37:30,903 INFO] 	* enc: 48085 match, 1917 missing, (96.17%)
+[2018-09-11 10:37:30,903 INFO] 	* dec: 48626 match, 1378 missing, (97.24%)
+[2018-09-11 10:37:30,903 INFO] 
+Filtered embeddings:
+[2018-09-11 10:37:30,904 INFO] 	* enc: torch.Size([50002, 300])
+[2018-09-11 10:37:30,904 INFO] 	* dec: torch.Size([50004, 300])
+[2018-09-11 10:37:30,904 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/fasttext_embs_words_tok.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/fasttext_embs_words_tok.dec.pt
+[2018-09-11 10:37:31,380 INFO] 
+Done.
+[2018-09-12 16:20:55,883 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-12 16:20:55,884 INFO] 	* source vocab: 50002 words
+[2018-09-12 16:20:55,884 INFO] 	* target vocab: 50004 words
+[2018-09-12 16:26:23,442 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-12 16:26:23,442 INFO] 	* source vocab: 50002 words
+[2018-09-12 16:26:23,442 INFO] 	* target vocab: 50004 words
+[2018-09-12 16:26:43,643 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-12 16:26:43,643 INFO] 	* source vocab: 50002 words
+[2018-09-12 16:26:43,643 INFO] 	* target vocab: 50004 words
+[2018-09-12 16:26:51,433 INFO] 
+Done.
+[2018-09-12 16:29:35,529 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-12 16:29:35,529 INFO] 	* source vocab: 50002 words
+[2018-09-12 16:29:35,529 INFO] 	* target vocab: 50004 words
+[2018-09-12 16:29:43,349 INFO] 
+Matching: 
+[2018-09-12 16:32:18,102 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-12 16:32:18,103 INFO] 	* source vocab: 50002 words
+[2018-09-12 16:32:18,103 INFO] 	* target vocab: 50004 words
+[2018-09-12 16:32:25,971 INFO] 
+Filtered embeddings:
+[2018-09-12 16:32:25,971 INFO] 	* enc: torch.Size([50002, 512])
+[2018-09-12 16:32:25,971 INFO] 	* dec: torch.Size([50004, 512])
+[2018-09-12 16:32:25,971 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/marsaglia_embeddings.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/marsaglia_embeddings.dec.pt
+[2018-09-12 16:32:27,868 INFO] 
+Done.
+[2018-09-17 19:23:04,021 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-17 19:23:04,022 INFO] 	* source vocab: 50002 words
+[2018-09-17 19:23:04,022 INFO] 	* target vocab: 50004 words
+[2018-09-17 19:27:11,578 INFO] Got 1999995 encryption embeddings from embeddings/fasttext.en.vec
+[2018-09-17 19:31:16,258 INFO] Got 2000000 decryption embeddings from embeddings/fasttext.fr.vec
+[2018-09-17 19:31:21,212 INFO] 
+Matching: 
+[2018-09-17 19:31:21,212 INFO] 	* enc: 48085 match, 1917 missing, (96.17%)
+[2018-09-17 19:31:21,212 INFO] 	* dec: 48626 match, 1378 missing, (97.24%)
+[2018-09-17 19:31:21,213 INFO] 
+Filtered embeddings:
+[2018-09-17 19:31:21,213 INFO] 	* enc: torch.Size([50002, 300])
+[2018-09-17 19:31:21,213 INFO] 	* dec: torch.Size([50004, 300])
+[2018-09-17 19:31:21,213 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/marsaglia_fasttext_embeddings.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/marsaglia_fasttext_embeddings.dec.pt
+[2018-09-17 19:31:21,530 INFO] 
+Done.
+[2018-09-20 16:06:06,514 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-20 16:06:06,514 INFO] 	* source vocab: 50002 words
+[2018-09-20 16:06:06,515 INFO] 	* target vocab: 50004 words
+[2018-09-20 16:06:09,895 INFO] 
+Filtered embeddings:
+[2018-09-20 16:06:09,897 INFO] 	* enc: torch.Size([50002, 300])
+[2018-09-20 16:06:09,898 INFO] 	* dec: torch.Size([50004, 300])
+[2018-09-20 16:06:09,898 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/marsaglia_gaussian_embeddings_300.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/marsaglia_gaussian_embeddings_300.dec.pt
+[2018-09-20 16:06:10,254 INFO] 
+Done.
+[2018-09-20 22:52:12,687 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2018-09-20 22:52:12,688 INFO] 	* source vocab: 50002 words
+[2018-09-20 22:52:12,688 INFO] 	* target vocab: 50004 words
+[2018-09-20 22:52:17,388 INFO] 
+Filtered embeddings:
+[2018-09-20 22:52:17,389 INFO] 	* enc: torch.Size([50002, 300])
+[2018-09-20 22:52:17,389 INFO] 	* dec: torch.Size([50004, 300])
+[2018-09-20 22:52:17,389 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/marsaglia_gaussian_embeddings_300.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/marsaglia_gaussian_embeddings_300.dec.pt
+[2018-09-20 22:52:17,689 INFO] 
+Done.
+[2018-09-24 16:16:42,947 INFO] From: IWSLT_2018/Basque_English/IWSLT_18_eu_en.TOKENIZED.100l.vocab.pt
+[2018-09-24 16:16:42,947 INFO] 	* source vocab: 18506 words
+[2018-09-24 16:16:42,947 INFO] 	* target vocab: 9986 words
+[2018-09-24 16:17:13,884 INFO] From: IWSLT_2018/Basque_English/IWSLT_18_eu_en.TOKENIZED.100l.vocab.pt
+[2018-09-24 16:17:13,884 INFO] 	* source vocab: 18506 words
+[2018-09-24 16:17:13,884 INFO] 	* target vocab: 9986 words
+[2018-09-24 16:20:44,213 INFO] Got 1824848 encryption embeddings from embeddings/fasttext.eu.vec
+[2018-09-24 16:30:11,929 INFO] From: IWSLT_2018/Basque_English/IWSLT_18_eu_en.TOKENIZED.100l.vocab.pt
+[2018-09-24 16:30:11,929 INFO] 	* source vocab: 18506 words
+[2018-09-24 16:30:11,929 INFO] 	* target vocab: 9986 words
+[2018-09-24 16:33:59,192 INFO] Got 1824848 encryption embeddings from embeddings/fasttext.eu.vec
+[2018-09-24 16:38:27,905 INFO] Got 2000000 decryption embeddings from embeddings/fasttext.fr.vec
+[2018-09-24 16:38:28,455 INFO] 
+Matching: 
+[2018-09-24 16:38:28,455 INFO] 	* enc: 16707 match, 1799 missing, (90.28%)
+[2018-09-24 16:38:28,456 INFO] 	* dec: 8879 match, 1107 missing, (88.91%)
+[2018-09-24 16:38:28,456 INFO] 
+Filtered embeddings:
+[2018-09-24 16:38:28,456 INFO] 	* enc: torch.Size([18506, 300])
+[2018-09-24 16:38:28,456 INFO] 	* dec: torch.Size([9986, 300])
+[2018-09-24 16:38:28,456 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2018/Basque_English/embeddings/fasttext_embs_words_tok.enc.pt
+	* dec: IWSLT_2018/Basque_English/embeddings/fasttext_embs_words_tok.dec.pt
+[2018-09-24 16:38:28,811 INFO] 
+Done.
+[2018-09-26 11:57:17,261 INFO] From: IWSLT_2018/Basque_English/PaCo_plus_TEDx10_eu_en.TOKENIZED.100l.vocab.pt
+[2018-09-26 11:57:17,261 INFO] 	* source vocab: 50002 words
+[2018-09-26 11:57:17,261 INFO] 	* target vocab: 50004 words
+[2018-09-26 12:01:09,098 INFO] Got 1824848 encryption embeddings from embeddings/fasttext.eu.vec
+[2018-09-26 12:05:39,953 INFO] Got 1999995 decryption embeddings from embeddings/fasttext.en.vec
+[2018-09-26 12:05:41,785 INFO] 
+Matching: 
+[2018-09-26 12:05:41,785 INFO] 	* enc: 45586 match, 4416 missing, (91.17%)
+[2018-09-26 12:05:41,785 INFO] 	* dec: 43037 match, 6967 missing, (86.07%)
+[2018-09-26 12:05:41,785 INFO] 
+Filtered embeddings:
+[2018-09-26 12:05:41,785 INFO] 	* enc: torch.Size([50002, 300])
+[2018-09-26 12:05:41,786 INFO] 	* dec: torch.Size([50004, 300])
+[2018-09-26 12:05:41,786 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2018/Basque_English/embeddings/fasttext_embs_words_tok_PaCo_TEDx10.enc.pt
+	* dec: IWSLT_2018/Basque_English/embeddings/fasttext_embs_words_tok_PaCo_TEDx10.dec.pt
+[2018-09-26 12:05:42,934 INFO] 
+Done.
+[2018-10-08 11:55:18,143 INFO] From: WMT17/en-de/data/BASELINE.TOKENIZED.100l.vocab.pt
+[2018-10-08 11:55:18,144 INFO] 	* source vocab: 50002 words
+[2018-10-08 11:55:18,144 INFO] 	* target vocab: 50004 words
+[2018-10-08 11:59:00,290 INFO] Got 2000000 encryption embeddings from embeddings/fasttext.de.vec
+[2018-10-08 12:03:02,143 INFO] Got 1999995 decryption embeddings from embeddings/fasttext.en.vec
+[2018-10-08 12:03:03,199 INFO] 
+Matching: 
+[2018-10-08 12:03:03,199 INFO] 	* enc: 49426 match, 576 missing, (98.85%)
+[2018-10-08 12:03:03,199 INFO] 	* dec: 49011 match, 993 missing, (98.01%)
+[2018-10-08 12:03:03,199 INFO] 
+Filtered embeddings:
+[2018-10-08 12:03:03,199 INFO] 	* enc: torch.Size([50002, 300])
+[2018-10-08 12:03:03,199 INFO] 	* dec: torch.Size([50004, 300])
+[2018-10-08 12:03:03,200 INFO] 
+Saving embedding as:
+	* enc: WMT17/en-de/embeddings/fasttext_embs_words_tok_de_en.enc.pt
+	* dec: WMT17/en-de/embeddings/fasttext_embs_words_tok_de_en.dec.pt
+[2018-10-08 12:03:03,592 INFO] 
+Done.
+[2018-10-16 14:59:07,098 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.bpe_32000_not_val.100l.vocab.pt
+[2018-10-16 14:59:07,098 INFO] 	* source vocab: 20459 words
+[2018-10-16 14:59:07,098 INFO] 	* target vocab: 24272 words
+[2018-10-16 14:59:10,599 INFO] Got 31805 encryption embeddings from embeddings/fasttext.en-fr.bpe.32000.vec
+[2018-10-16 14:59:14,024 INFO] Got 31805 decryption embeddings from embeddings/fasttext.en-fr.bpe.32000.vec
+[2018-10-16 14:59:14,575 INFO] 
+Matching: 
+[2018-10-16 14:59:14,575 INFO] 	* enc: 20457 match, 2 missing, (99.99%)
+[2018-10-16 14:59:14,575 INFO] 	* dec: 24269 match, 3 missing, (99.99%)
+[2018-10-16 14:59:14,576 INFO] 
+Filtered embeddings:
+[2018-10-16 14:59:14,576 INFO] 	* enc: torch.Size([20459, 300])
+[2018-10-16 14:59:14,578 INFO] 	* dec: torch.Size([24272, 300])
+[2018-10-16 14:59:14,578 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/fasttext_en_fr_bpe_32000.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/fasttext_en_fr_bpe_32000.dec.pt
+[2018-10-16 14:59:15,132 INFO] 
+Done.
+[2018-10-16 15:55:18,975 INFO] From: IWSLT_2018/Basque_English/BPE_32000.TOKENIZED.100l.vocab.pt
+[2018-10-16 15:55:18,975 INFO] 	* source vocab: 24912 words
+[2018-10-16 15:55:18,976 INFO] 	* target vocab: 20407 words
+[2018-10-16 15:55:22,510 INFO] Got 31975 encryption embeddings from embeddings/fasttext.eu-en.bpe.32000.vec
+[2018-10-16 15:55:25,999 INFO] Got 31975 decryption embeddings from embeddings/fasttext.eu-en.bpe.32000.vec
+[2018-10-16 15:55:26,542 INFO] 
+Matching: 
+[2018-10-16 15:55:26,542 INFO] 	* enc: 24910 match, 2 missing, (99.99%)
+[2018-10-16 15:55:26,542 INFO] 	* dec: 20404 match, 3 missing, (99.99%)
+[2018-10-16 15:55:26,543 INFO] 
+Filtered embeddings:
+[2018-10-16 15:55:26,543 INFO] 	* enc: torch.Size([24912, 300])
+[2018-10-16 15:55:26,543 INFO] 	* dec: torch.Size([20407, 300])
+[2018-10-16 15:55:26,543 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2018/Basque_english/embeddings/fasttext_eu_en_bpe_32000.enc.pt
+	* dec: IWSLT_2018/Basque_english/embeddings/fasttext_eu_en_bpe_32000.dec.pt
+[2018-10-16 15:55:39,186 INFO] From: IWSLT_2018/Basque_English/BPE_32000.TOKENIZED.100l.vocab.pt
+[2018-10-16 15:55:39,186 INFO] 	* source vocab: 24912 words
+[2018-10-16 15:55:39,186 INFO] 	* target vocab: 20407 words
+[2018-10-16 15:55:42,616 INFO] Got 31975 encryption embeddings from embeddings/fasttext.eu-en.bpe.32000.vec
+[2018-10-16 15:55:46,075 INFO] Got 31975 decryption embeddings from embeddings/fasttext.eu-en.bpe.32000.vec
+[2018-10-16 15:55:46,622 INFO] 
+Matching: 
+[2018-10-16 15:55:46,622 INFO] 	* enc: 24910 match, 2 missing, (99.99%)
+[2018-10-16 15:55:46,622 INFO] 	* dec: 20404 match, 3 missing, (99.99%)
+[2018-10-16 15:55:46,622 INFO] 
+Filtered embeddings:
+[2018-10-16 15:55:46,622 INFO] 	* enc: torch.Size([24912, 300])
+[2018-10-16 15:55:46,623 INFO] 	* dec: torch.Size([20407, 300])
+[2018-10-16 15:55:46,623 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2018/Basque_English/embeddings/fasttext_eu_en_bpe_32000.enc.pt
+	* dec: IWSLT_2018/Basque_English/embeddings/fasttext_eu_en_bpe_32000.dec.pt
+[2018-10-16 15:55:47,162 INFO] 
+Done.
+[2018-10-19 13:53:04,873 INFO] From: WMT17/en-de/data/BPE_32000.TOKENIZED.100l.vocab.pt
+[2018-10-19 13:53:04,873 INFO] 	* source vocab: 35076 words
+[2018-10-19 13:53:04,873 INFO] 	* target vocab: 34358 words
+[2018-10-19 13:53:09,101 INFO] Got 36913 encryption embeddings from embeddings/fasttext.de-en.bpe.32000.vec
+[2018-10-19 13:53:13,267 INFO] Got 36913 decryption embeddings from embeddings/fasttext.de-en.bpe.32000.vec
+[2018-10-19 13:53:14,348 INFO] 
+Matching: 
+[2018-10-19 13:53:14,349 INFO] 	* enc: 35074 match, 2 missing, (99.99%)
+[2018-10-19 13:53:14,350 INFO] 	* dec: 34355 match, 3 missing, (99.99%)
+[2018-10-19 13:53:14,350 INFO] 
+Filtered embeddings:
+[2018-10-19 13:53:14,350 INFO] 	* enc: torch.Size([35076, 300])
+[2018-10-19 13:53:14,351 INFO] 	* dec: torch.Size([34358, 300])
+[2018-10-19 13:53:14,351 INFO] 
+Saving embedding as:
+	* enc: WMT17/en-de/embeddings/fasttext_en_de_bpe_32000.enc.pt
+	* dec: WMT17/en-de/embeddings/fasttext_en_de_bpe_32000.dec.pt
+[2018-10-19 13:53:15,166 INFO] 
+Done.
+[2018-10-20 13:46:22,334 INFO] From: IWSLT_2016/czech-english/BPE_32000.TOKENIZED.100l.vocab.pt
+[2018-10-20 13:46:22,334 INFO] 	* source vocab: 24010 words
+[2018-10-20 13:46:22,334 INFO] 	* target vocab: 15054 words
+[2018-10-20 13:46:26,187 INFO] Got 31913 encryption embeddings from embeddings/fasttext.cs-en.bpe.32000.vec
+[2018-10-20 13:46:29,791 INFO] Got 31913 decryption embeddings from embeddings/fasttext.cs-en.bpe.32000.vec
+[2018-10-20 13:46:30,455 INFO] 
+Matching: 
+[2018-10-20 13:46:30,456 INFO] 	* enc: 24008 match, 2 missing, (99.99%)
+[2018-10-20 13:46:30,456 INFO] 	* dec: 15051 match, 3 missing, (99.98%)
+[2018-10-20 13:46:30,456 INFO] 
+Filtered embeddings:
+[2018-10-20 13:46:30,456 INFO] 	* enc: torch.Size([24010, 300])
+[2018-10-20 13:46:30,457 INFO] 	* dec: torch.Size([15054, 300])
+[2018-10-20 13:46:30,457 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/czech-english/embeddings/fasttext_cs_en_bpe_32000.enc.pt
+	* dec: IWSLT_2016/czech-english/embeddings/fasttext_cs_en_bpe_32000.dec.pt
+[2018-10-20 13:46:48,178 INFO] From: IWSLT_2016/czech-english/BPE_32000.TOKENIZED.100l.vocab.pt
+[2018-10-20 13:46:48,178 INFO] 	* source vocab: 24010 words
+[2018-10-20 13:46:48,178 INFO] 	* target vocab: 15054 words
+[2018-10-20 13:46:51,772 INFO] Got 31913 encryption embeddings from embeddings/fasttext.cs-en.bpe.32000.vec
+[2018-10-20 13:46:55,443 INFO] Got 31913 decryption embeddings from embeddings/fasttext.cs-en.bpe.32000.vec
+[2018-10-20 13:46:56,298 INFO] 
+Matching: 
+[2018-10-20 13:46:56,298 INFO] 	* enc: 24008 match, 2 missing, (99.99%)
+[2018-10-20 13:46:56,298 INFO] 	* dec: 15051 match, 3 missing, (99.98%)
+[2018-10-20 13:46:56,298 INFO] 
+Filtered embeddings:
+[2018-10-20 13:46:56,298 INFO] 	* enc: torch.Size([24010, 300])
+[2018-10-20 13:46:56,299 INFO] 	* dec: torch.Size([15054, 300])
+[2018-10-20 13:46:56,299 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/czech-english/embeddings/fasttext_cs_en_bpe_32000.enc.pt
+	* dec: IWSLT_2016/czech-english/embeddings/fasttext_cs_en_bpe_32000.dec.pt
+[2018-10-20 13:46:56,819 INFO] 
+Done.
+[2018-10-23 12:13:00,893 INFO] From: WMT17/en-de/data/BASELINE_COMPLETE.TOKENIZED.100l.vocab.pt
+[2018-10-23 12:13:00,894 INFO] 	* source vocab: 50002 words
+[2018-10-23 12:13:00,894 INFO] 	* target vocab: 50004 words
+[2018-10-23 12:18:46,808 INFO] Got 2000000 encryption embeddings from embeddings/fasttext.de.vec
+[2018-10-23 12:24:58,769 INFO] Got 1999995 decryption embeddings from embeddings/fasttext.en.vec
+[2018-10-23 12:25:01,137 INFO] 
+Matching: 
+[2018-10-23 12:25:01,137 INFO] 	* enc: 49484 match, 518 missing, (98.96%)
+[2018-10-23 12:25:01,137 INFO] 	* dec: 49098 match, 906 missing, (98.19%)
+[2018-10-23 12:25:01,137 INFO] 
+Filtered embeddings:
+[2018-10-23 12:25:01,137 INFO] 	* enc: torch.Size([50002, 300])
+[2018-10-23 12:25:01,138 INFO] 	* dec: torch.Size([50004, 300])
+[2018-10-23 12:25:01,138 INFO] 
+Saving embedding as:
+	* enc: WMT17/en-de/embeddings/fasttext_de_en_complete.enc.pt
+	* dec: WMT17/en-de/embeddings/fasttext_de_en_complete.dec.pt
+[2018-10-23 12:25:02,367 INFO] 
+Done.
+[2018-10-24 11:49:54,372 INFO] From: IWSLT_2016/english_french/BPE_32000.TOKENIZED.100l.vocab.pt
+[2018-10-24 11:49:54,372 INFO] 	* source vocab: 20459 words
+[2018-10-24 11:49:54,372 INFO] 	* target vocab: 24272 words
+[2018-10-24 11:49:57,267 INFO] Got 31805 encryption embeddings from embeddings/fasttext.en-fr.bpe.32000.vec
+[2018-10-24 11:50:00,131 INFO] Got 31805 decryption embeddings from embeddings/fasttext.en-fr.bpe.32000.vec
+[2018-10-24 11:50:00,703 INFO] 
+Matching: 
+[2018-10-24 11:50:00,703 INFO] 	* enc: 20457 match, 2 missing, (99.99%)
+[2018-10-24 11:50:00,703 INFO] 	* dec: 24269 match, 3 missing, (99.99%)
+[2018-10-24 11:50:00,703 INFO] 
+Filtered embeddings:
+[2018-10-24 11:50:00,703 INFO] 	* enc: torch.Size([20459, 300])
+[2018-10-24 11:50:00,704 INFO] 	* dec: torch.Size([24272, 300])
+[2018-10-24 11:50:00,704 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/fasttext_en-fr_good.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/fasttext_en-fr_good.dec.pt
+[2018-10-24 11:50:00,843 INFO] 
+Done.
+[2018-11-03 10:36:17,991 INFO] From: WMT17/ro-en/BASELINE.TOKENIZED.100l.vocab.pt
+[2018-11-03 10:36:17,991 INFO] 	* source vocab: 50002 words
+[2018-11-03 10:36:17,991 INFO] 	* target vocab: 50004 words
+[2018-11-03 10:39:59,490 INFO] Got 2000000 encryption embeddings from embeddings/fasttext.ro.vec
+[2018-11-03 10:44:15,241 INFO] Got 1999995 decryption embeddings from embeddings/fasttext.en.vec
+[2018-11-03 10:44:16,691 INFO] 
+Matching: 
+[2018-11-03 10:44:16,691 INFO] 	* enc: 48510 match, 1492 missing, (97.02%)
+[2018-11-03 10:44:16,691 INFO] 	* dec: 45917 match, 4087 missing, (91.83%)
+[2018-11-03 10:44:16,691 INFO] 
+Filtered embeddings:
+[2018-11-03 10:44:16,692 INFO] 	* enc: torch.Size([50002, 300])
+[2018-11-03 10:44:16,692 INFO] 	* dec: torch.Size([50004, 300])
+[2018-11-03 10:44:16,692 INFO] 
+Saving embedding as:
+	* enc: WMT17/ro-en/embeddings/fasttext.enc.pt
+	* dec: WMT17/ro-en/embeddings/fasttext.dec.pt
+[2018-11-03 10:44:16,977 INFO] 
+Done.
+[2018-11-04 18:16:47,992 INFO] From: WMT17/ro-en/BASELINE_UPDATED.TOKENIZED.100l.vocab.pt
+[2018-11-04 18:16:47,993 INFO] 	* source vocab: 50002 words
+[2018-11-04 18:16:47,993 INFO] 	* target vocab: 50004 words
+[2018-11-04 18:20:18,864 INFO] Got 2000000 encryption embeddings from embeddings/fasttext.ro.vec
+[2018-11-04 18:24:13,367 INFO] Got 1999995 decryption embeddings from embeddings/fasttext.en.vec
+[2018-11-04 18:24:15,110 INFO] 
+Matching: 
+[2018-11-04 18:24:15,110 INFO] 	* enc: 48510 match, 1492 missing, (97.02%)
+[2018-11-04 18:24:15,110 INFO] 	* dec: 45917 match, 4087 missing, (91.83%)
+[2018-11-04 18:24:15,110 INFO] 
+Filtered embeddings:
+[2018-11-04 18:24:15,110 INFO] 	* enc: torch.Size([50002, 300])
+[2018-11-04 18:24:15,110 INFO] 	* dec: torch.Size([50004, 300])
+[2018-11-04 18:24:15,110 INFO] 
+Saving embedding as:
+	* enc: WMT17/ro-en/embeddings/fasttext_UPDATED.enc.pt
+	* dec: WMT17/ro-en/embeddings/fasttext_UPDATED.dec.pt
+[2018-11-04 18:24:15,384 INFO] 
+Done.
+[2019-03-22 11:57:37,780 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2019-03-22 11:57:37,780 INFO] 	* source vocab: 50002 words
+[2019-03-22 11:57:37,781 INFO] 	* target vocab: 50004 words
+[2019-03-22 12:00:24,745 INFO] Got 1233208 encryption embeddings from embeddings/french.vec
+[2019-03-22 12:03:23,041 INFO] Got 1250209 decryption embeddings from embeddings/english.vec
+[2019-03-22 12:03:25,484 INFO] 
+Matching: 
+[2019-03-22 12:03:25,484 INFO] 	* enc: 28870 match, 21132 missing, (57.74%)
+[2019-03-22 12:03:25,484 INFO] 	* dec: 16616 match, 33388 missing, (33.23%)
+[2019-03-22 12:03:25,484 INFO] 
+Filtered embeddings:
+[2019-03-22 12:03:25,484 INFO] 	* enc: torch.Size([50002, 300])
+[2019-03-22 12:03:25,523 INFO] 	* dec: torch.Size([50004, 300])
+[2019-03-22 12:03:25,523 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/fasttext_1024.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/fasttext_1024.dec.pt
+[2019-03-22 12:03:26,342 INFO] 
+Done.
+[2019-03-24 20:58:34,272 INFO] From: WMT18/de_en/BASELINE.TOKENIZED.100l.vocab.pt
+[2019-03-24 20:58:34,273 INFO] 	* source vocab: 50002 words
+[2019-03-24 20:58:34,273 INFO] 	* target vocab: 50004 words
+[2019-03-24 21:02:09,381 INFO] Got 2000000 encryption embeddings from embeddings/german.vec
+[2019-03-24 21:04:24,485 INFO] Got 1250209 decryption embeddings from embeddings/english.vec
+[2019-03-24 21:04:25,625 INFO] 
+Matching: 
+[2019-03-24 21:04:25,625 INFO] 	* enc: 49134 match, 868 missing, (98.26%)
+[2019-03-24 21:04:25,625 INFO] 	* dec: 46686 match, 3318 missing, (93.36%)
+[2019-03-24 21:04:25,625 INFO] 
+Filtered embeddings:
+[2019-03-24 21:04:25,625 INFO] 	* enc: torch.Size([50002, 300])
+[2019-03-24 21:04:25,628 INFO] 	* dec: torch.Size([50004, 300])
+[2019-03-24 21:04:25,628 INFO] 
+Saving embedding as:
+	* enc: WMT18/de_en/embeddings/fasttext.enc.pt
+	* dec: WMT18/de_en/embeddings/fasttext.dec.pt
+[2019-03-24 21:04:26,329 INFO] 
+Done.
+[2019-03-29 13:34:33,257 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2019-03-29 13:34:33,257 INFO] 	* source vocab: 50002 words
+[2019-03-29 13:34:33,257 INFO] 	* target vocab: 50004 words
+[2019-03-29 14:11:25,304 INFO] Got 4870094 encryption embeddings from embeddings/english_wiki.vec
+[2019-03-31 21:44:58,410 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2019-03-31 21:44:58,411 INFO] 	* source vocab: 50002 words
+[2019-03-31 21:44:58,411 INFO] 	* target vocab: 50004 words
+[2019-03-31 22:00:24,038 INFO] Got 2069978 encryption embeddings from embeddings/english_wiki.vec
+[2019-03-31 22:07:40,494 INFO] Got 1063143 decryption embeddings from embeddings/french_wiki.vec
+[2019-03-31 22:07:45,878 INFO] 
+Matching: 
+[2019-03-31 22:07:45,878 INFO] 	* enc: 46908 match, 3094 missing, (93.81%)
+[2019-03-31 22:07:45,878 INFO] 	* dec: 45186 match, 4818 missing, (90.36%)
+[2019-03-31 22:07:45,878 INFO] 
+Filtered embeddings:
+[2019-03-31 22:07:45,879 INFO] 	* enc: torch.Size([50002, 1024])
+[2019-03-31 22:07:45,879 INFO] 	* dec: torch.Size([50004, 1024])
+[2019-03-31 22:07:45,879 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/fasttext_wiki.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/fasttext_wiki.dec.pt
+[2019-03-31 22:07:47,482 INFO] 
+Done.
+[2019-04-03 10:29:05,147 INFO] From: IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2019-04-03 10:29:05,148 INFO] 	* source vocab: 50002 words
+[2019-04-03 10:29:05,148 INFO] 	* target vocab: 50004 words
+[2019-04-03 10:36:53,868 INFO] Got 2069978 encryption embeddings from embeddings/english_wiki.vec
+[2019-04-03 10:40:43,334 INFO] Got 1063143 decryption embeddings from embeddings/french_wiki.vec
+[2019-04-03 10:40:46,229 INFO] 
+Matching: 
+[2019-04-03 10:40:46,230 INFO] 	* enc: 46908 match, 3094 missing, (93.81%)
+[2019-04-03 10:40:46,230 INFO] 	* dec: 45186 match, 4818 missing, (90.36%)
+[2019-04-03 10:40:46,230 INFO] 
+Filtered embeddings:
+[2019-04-03 10:40:46,230 INFO] 	* enc: torch.Size([50002, 512])
+[2019-04-03 10:40:46,230 INFO] 	* dec: torch.Size([50004, 512])
+[2019-04-03 10:40:46,231 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/english_french/embeddings/fasttext_wiki.enc.pt
+	* dec: IWSLT_2016/english_french/embeddings/fasttext_wiki.dec.pt
+[2019-04-03 10:40:47,469 INFO] 
+Done.
+[2019-04-06 16:28:11,939 INFO] From: WMT18/de_en/BASELINE.TOKENIZED.100l.vocab.pt
+[2019-04-06 16:28:11,940 INFO] 	* source vocab: 50002 words
+[2019-04-06 16:28:11,940 INFO] 	* target vocab: 50004 words
+[2019-04-06 16:32:16,662 INFO] Got 2000000 encryption embeddings from embeddings/german.vec
+[2019-04-06 16:34:56,028 INFO] Got 1250209 decryption embeddings from embeddings/english.vec
+[2019-04-06 16:34:57,482 INFO] 
+Matching: 
+[2019-04-06 16:34:57,483 INFO] 	* enc: 49134 match, 868 missing, (98.26%)
+[2019-04-06 16:34:57,483 INFO] 	* dec: 46686 match, 3318 missing, (93.36%)
+[2019-04-06 16:34:57,483 INFO] 
+Filtered embeddings:
+[2019-04-06 16:34:57,483 INFO] 	* enc: torch.Size([50002, 300])
+[2019-04-06 16:34:57,483 INFO] 	* dec: torch.Size([50004, 300])
+[2019-04-06 16:34:57,483 INFO] 
+Saving embedding as:
+	* enc: Ikak.enc.pt
+	* dec: Ikak.dec.pt
+[2019-04-06 16:34:57,857 INFO] 
+Done.
+[2019-04-06 17:06:23,323 INFO] From: WMT18/de_en/200K.TOKENIZED.100l.vocab.pt
+[2019-04-06 17:06:23,323 INFO] 	* source vocab: 50002 words
+[2019-04-06 17:06:23,323 INFO] 	* target vocab: 50004 words
+[2019-04-06 17:10:16,880 INFO] Got 2000000 encryption embeddings from embeddings/german.vec
+[2019-04-06 17:12:58,238 INFO] Got 1250209 decryption embeddings from embeddings/english.vec
+[2019-04-06 17:12:59,724 INFO] 
+Matching: 
+[2019-04-06 17:12:59,725 INFO] 	* enc: 48920 match, 1082 missing, (97.84%)
+[2019-04-06 17:12:59,725 INFO] 	* dec: 44948 match, 5056 missing, (89.89%)
+[2019-04-06 17:12:59,725 INFO] 
+Filtered embeddings:
+[2019-04-06 17:12:59,725 INFO] 	* enc: torch.Size([50002, 300])
+[2019-04-06 17:12:59,728 INFO] 	* dec: torch.Size([50004, 300])
+[2019-04-06 17:12:59,728 INFO] 
+Saving embedding as:
+	* enc: WMT18/de_en/train_val/200K/embeddings.enc.pt
+	* dec: WMT18/de_en/train_val/200K/embeddings.dec.pt
+[2019-04-06 17:13:00,497 INFO] 
+Done.
+[2019-04-07 09:52:27,947 INFO] From: WMT18/de_en/500K.TOKENIZED.100l.vocab.pt
+[2019-04-07 09:52:27,948 INFO] 	* source vocab: 50002 words
+[2019-04-07 09:52:27,948 INFO] 	* target vocab: 50004 words
+[2019-04-07 10:00:23,375 INFO] From: WMT18/de_en/500K.TOKENIZED.100l.vocab.pt
+[2019-04-07 10:00:23,375 INFO] 	* source vocab: 50002 words
+[2019-04-07 10:00:23,375 INFO] 	* target vocab: 50004 words
+[2019-04-07 10:04:26,507 INFO] Got 2000000 encryption embeddings from embeddings/german.vec
+[2019-04-07 19:03:11,860 INFO] From: WMT18/de_en/500K.TOKENIZED.100l.vocab.pt
+[2019-04-07 19:03:11,860 INFO] 	* source vocab: 50002 words
+[2019-04-07 19:03:11,861 INFO] 	* target vocab: 50004 words
+[2019-04-07 19:07:23,087 INFO] Got 2000000 encryption embeddings from embeddings/german.vec
+[2019-04-07 19:10:13,132 INFO] Got 1250209 decryption embeddings from embeddings/english.vec
+[2019-04-07 19:10:14,640 INFO] 
+Matching: 
+[2019-04-07 19:10:14,640 INFO] 	* enc: 49018 match, 984 missing, (98.03%)
+[2019-04-07 19:10:14,640 INFO] 	* dec: 46172 match, 3832 missing, (92.34%)
+[2019-04-07 19:10:14,640 INFO] 
+Filtered embeddings:
+[2019-04-07 19:10:14,640 INFO] 	* enc: torch.Size([50002, 300])
+[2019-04-07 19:10:14,642 INFO] 	* dec: torch.Size([50004, 300])
+[2019-04-07 19:10:14,642 INFO] 
+Saving embedding as:
+	* enc: WMT18/de_en/train_val/500K/embeddings.enc.pt
+	* dec: WMT18/de_en/train_val/500K/embeddings.dec.pt
+[2019-04-07 19:10:15,527 INFO] 
+Done.
+[2019-04-07 19:11:44,220 INFO] From: WMT18/de_en/1M.TOKENIZED.100l.vocab.pt
+[2019-04-07 19:11:44,220 INFO] 	* source vocab: 50002 words
+[2019-04-07 19:11:44,220 INFO] 	* target vocab: 50004 words
+[2019-04-07 19:15:50,325 INFO] Got 2000000 encryption embeddings from embeddings/german.vec
+[2019-04-07 19:18:24,358 INFO] Got 1250209 decryption embeddings from embeddings/english.vec
+[2019-04-07 19:18:25,543 INFO] 
+Matching: 
+[2019-04-07 19:18:25,544 INFO] 	* enc: 49074 match, 928 missing, (98.14%)
+[2019-04-07 19:18:25,544 INFO] 	* dec: 46524 match, 3480 missing, (93.04%)
+[2019-04-07 19:18:25,544 INFO] 
+Filtered embeddings:
+[2019-04-07 19:18:25,544 INFO] 	* enc: torch.Size([50002, 300])
+[2019-04-07 19:18:25,546 INFO] 	* dec: torch.Size([50004, 300])
+[2019-04-07 19:18:25,546 INFO] 
+Saving embedding as:
+	* enc: WMT18/de_en/train_val/1M/embeddings.enc.pt
+	* dec: WMT18/de_en/train_val/1M/embeddings.dec.pt
+[2019-04-07 19:18:26,456 INFO] 
+Done.
+[2019-04-07 19:19:02,438 INFO] From: WMT18/de_en/2M.TOKENIZED.100l.vocab.pt
+[2019-04-07 19:19:02,439 INFO] 	* source vocab: 50002 words
+[2019-04-07 19:19:02,439 INFO] 	* target vocab: 50004 words
+[2019-04-07 19:23:06,945 INFO] Got 2000000 encryption embeddings from embeddings/german.vec
+[2019-04-07 19:25:41,754 INFO] Got 1250209 decryption embeddings from embeddings/english.vec
+[2019-04-07 19:25:42,930 INFO] 
+Matching: 
+[2019-04-07 19:25:42,931 INFO] 	* enc: 49111 match, 891 missing, (98.22%)
+[2019-04-07 19:25:42,931 INFO] 	* dec: 46614 match, 3390 missing, (93.22%)
+[2019-04-07 19:25:42,931 INFO] 
+Filtered embeddings:
+[2019-04-07 19:25:42,931 INFO] 	* enc: torch.Size([50002, 300])
+[2019-04-07 19:25:42,933 INFO] 	* dec: torch.Size([50004, 300])
+[2019-04-07 19:25:42,933 INFO] 
+Saving embedding as:
+	* enc: WMT18/de_en/train_val/2M/embeddings.enc.pt
+	* dec: WMT18/de_en/train_val/2M/embeddings.dec.pt
+[2019-04-07 19:25:43,800 INFO] 
+Done.
+[2019-04-12 17:04:26,353 INFO] From: ../OpenNMT_Last_new/IWSLT_2016/czech-english/BASELINE.TOKENIZED.100l.vocab.pt
+[2019-04-12 17:04:26,353 INFO] 	* source vocab: 50002 words
+[2019-04-12 17:04:26,353 INFO] 	* target vocab: 48008 words
+[2019-04-12 17:08:27,146 INFO] Got 2000000 encryption embeddings from ../OpenNMT_Last_new/embeddings/czech.vec
+[2019-04-12 17:19:05,778 INFO] From: ../OpenNMT_Last_new/IWSLT_2016/czech-english/BASELINE.TOKENIZED.100l.vocab.pt
+[2019-04-12 17:19:05,778 INFO] 	* source vocab: 50002 words
+[2019-04-12 17:19:05,778 INFO] 	* target vocab: 48008 words
+[2019-04-12 17:22:41,346 INFO] Got 2000000 encryption embeddings from ../OpenNMT_Last_new/embeddings/czech.vec
+[2019-04-12 17:24:59,530 INFO] Got 1250209 decryption embeddings from ../OpenNMT_Last_new/embeddings/english.vec
+[2019-04-12 17:25:00,721 INFO] 
+Matching: 
+[2019-04-12 17:25:00,721 INFO] 	* enc: 49149 match, 853 missing, (98.29%)
+[2019-04-12 17:25:00,721 INFO] 	* dec: 44279 match, 3729 missing, (92.23%)
+[2019-04-12 17:25:00,721 INFO] 
+Filtered embeddings:
+[2019-04-12 17:25:00,722 INFO] 	* enc: torch.Size([50002, 300])
+[2019-04-12 17:25:00,722 INFO] 	* dec: torch.Size([48008, 300])
+[2019-04-12 17:25:00,722 INFO] 
+Saving embedding as:
+	* enc: ../OpenNMT_Last_new/IWSLT_2016/czech-english/embeddings/fasttext_baseline.enc.pt
+	* dec: ../OpenNMT_Last_new/IWSLT_2016/czech-english/embeddings/fasttext_baseline.dec.pt
+[2019-04-12 17:25:01,454 INFO] 
+Done.
+[2019-05-14 14:41:39,519 INFO] From: ../OpenNMT_Last_new/IT_2016/BASELINE.TOKENIZED.100l.vocab.pt
+[2019-05-14 14:41:39,519 INFO] 	* source vocab: 48339 words
+[2019-05-14 14:41:39,519 INFO] 	* target vocab: 33522 words
+[2019-05-14 14:41:44,914 INFO] Got 28467 encryption embeddings from ../UnsupervisedMT/NMT/embeddings/eu_en/word/eu_en_word.vec
+[2019-05-14 14:41:50,120 INFO] Got 28467 decryption embeddings from ../UnsupervisedMT/NMT/embeddings/eu_en/word/eu_en_word.vec
+[2019-05-14 14:41:52,678 INFO] 
+Matching: 
+[2019-05-14 14:41:52,678 INFO] 	* enc: 22494 match, 25845 missing, (46.53%)
+[2019-05-14 14:41:52,678 INFO] 	* dec: 16238 match, 17284 missing, (48.44%)
+[2019-05-14 14:41:52,679 INFO] 
+Filtered embeddings:
+[2019-05-14 14:41:52,679 INFO] 	* enc: torch.Size([48339, 512])
+[2019-05-14 14:41:52,679 INFO] 	* dec: torch.Size([33522, 512])
+[2019-05-14 14:41:52,679 INFO] 
+Saving embedding as:
+	* enc: IT_2016/embeddings_transformer/fasttext_512.enc.pt
+	* dec: IT_2016/embeddings_transformer/fasttext_512.dec.pt
+[2019-05-14 14:41:54,310 INFO] 
+Done.
+[2019-05-14 14:43:17,280 INFO] From: ../OpenNMT_Last_new/IT_2016/BPE_8000.TOKENIZED.100l.vocab.pt
+[2019-05-14 14:43:17,280 INFO] 	* source vocab: 7469 words
+[2019-05-14 14:43:17,280 INFO] 	* target vocab: 5483 words
+[2019-05-14 14:43:18,790 INFO] Got 8063 encryption embeddings from ../UnsupervisedMT/NMT/embeddings/eu_en/bpe/eu_en_word.vec
+[2019-05-14 14:43:20,366 INFO] Got 8063 decryption embeddings from ../UnsupervisedMT/NMT/embeddings/eu_en/bpe/eu_en_word.vec
+[2019-05-14 14:43:20,622 INFO] 
+Matching: 
+[2019-05-14 14:43:20,622 INFO] 	* enc: 7394 match, 75 missing, (99.00%)
+[2019-05-14 14:43:20,622 INFO] 	* dec: 5402 match, 81 missing, (98.52%)
+[2019-05-14 14:43:20,622 INFO] 
+Filtered embeddings:
+[2019-05-14 14:43:20,623 INFO] 	* enc: torch.Size([7469, 512])
+[2019-05-14 14:43:20,623 INFO] 	* dec: torch.Size([5483, 512])
+[2019-05-14 14:43:20,623 INFO] 
+Saving embedding as:
+	* enc: IT_2016/embeddings_transformer/fasttext_bpe_8000_512.enc.pt
+	* dec: IT_2016/embeddings_transformer/fasttext_bpe_8000_512.dec.pt
+[2019-05-14 14:43:20,923 INFO] 
+Done.
+[2019-05-16 10:51:35,353 INFO] From: ../OpenNMT_Last_new/IWSLT_2016/english_french/BPE_32000.TOKENIZED.100l.vocab.pt
+[2019-05-16 10:51:35,353 INFO] 	* source vocab: 20459 words
+[2019-05-16 10:51:35,353 INFO] 	* target vocab: 24272 words
+[2019-05-16 10:51:46,750 INFO] Got 63223 encryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/word/en_fr_word.vec
+[2019-05-16 10:52:27,453 INFO] From: ../OpenNMT_Last_new/IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2019-05-16 10:52:27,454 INFO] 	* source vocab: 50002 words
+[2019-05-16 10:52:27,454 INFO] 	* target vocab: 50004 words
+[2019-05-16 10:52:38,960 INFO] Got 63223 encryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/word/en_fr_word.vec
+[2019-05-16 10:52:51,228 INFO] Got 63223 decryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/word/en_fr_word.vec
+[2019-05-16 10:52:53,832 INFO] 
+Matching: 
+[2019-05-16 10:52:53,832 INFO] 	* enc: 34251 match, 15751 missing, (68.50%)
+[2019-05-16 10:52:53,832 INFO] 	* dec: 40265 match, 9739 missing, (80.52%)
+[2019-05-16 10:52:53,833 INFO] 
+Filtered embeddings:
+[2019-05-16 10:52:53,833 INFO] 	* enc: torch.Size([50002, 512])
+[2019-05-16 10:52:53,833 INFO] 	* dec: torch.Size([50004, 512])
+[2019-05-16 10:52:53,833 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/french_data/embeddings_transformer/fasttext_512.enc.pt
+	* dec: IWSLT_2016/french_data/embeddings_transformer/fasttext_512.dec.pt
+[2019-05-16 10:52:55,743 INFO] 
+Done.
+[2019-05-16 11:19:28,278 INFO] From: ../OpenNMT_Last_new/IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2019-05-16 11:19:28,278 INFO] 	* source vocab: 50002 words
+[2019-05-16 11:19:28,278 INFO] 	* target vocab: 50004 words
+[2019-05-16 11:19:53,520 INFO] Got 133012 encryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/word/en_fr_word.vec
+[2019-05-16 11:20:19,296 INFO] Got 133012 decryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/word/en_fr_word.vec
+[2019-05-16 11:20:21,374 INFO] 
+Matching: 
+[2019-05-16 11:20:21,374 INFO] 	* enc: 50000 match, 2 missing, (100.00%)
+[2019-05-16 11:20:21,374 INFO] 	* dec: 50001 match, 3 missing, (99.99%)
+[2019-05-16 11:20:21,374 INFO] 
+Filtered embeddings:
+[2019-05-16 11:20:21,375 INFO] 	* enc: torch.Size([50002, 512])
+[2019-05-16 11:20:21,375 INFO] 	* dec: torch.Size([50004, 512])
+[2019-05-16 11:20:21,375 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/french_data/embeddings_transformer/fasttext_512.enc.pt
+	* dec: IWSLT_2016/french_data/embeddings_transformer/fasttext_512.dec.pt
+[2019-05-16 11:20:23,330 INFO] 
+Done.
+[2019-05-16 11:57:54,801 INFO] From: ../OpenNMT_Last_new/IWSLT_2016/english_french/BPE_32000.TOKENIZED.100l.vocab.pt
+[2019-05-16 11:57:54,802 INFO] 	* source vocab: 20459 words
+[2019-05-16 11:57:54,802 INFO] 	* target vocab: 24272 words
+[2019-05-16 11:58:00,845 INFO] Got 31805 encryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/bpe/en_fr_bpe.vec
+[2019-05-16 11:58:06,683 INFO] Got 31805 decryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/bpe/en_fr_bpe.vec
+[2019-05-16 11:58:07,873 INFO] 
+Matching: 
+[2019-05-16 11:58:07,874 INFO] 	* enc: 20457 match, 2 missing, (99.99%)
+[2019-05-16 11:58:07,874 INFO] 	* dec: 24269 match, 3 missing, (99.99%)
+[2019-05-16 11:58:07,874 INFO] 
+Filtered embeddings:
+[2019-05-16 11:58:07,874 INFO] 	* enc: torch.Size([20459, 512])
+[2019-05-16 11:58:07,876 INFO] 	* dec: torch.Size([24272, 512])
+[2019-05-16 11:58:07,876 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/french_data/embeddings_transformer/fasttext_bpe_512.enc.pt
+	* dec: IWSLT_2016/french_data/embeddings_transformer/fasttext_bpe_512.dec.pt
+[2019-05-16 11:58:08,755 INFO] 
+Done.
+[2019-05-16 12:17:08,440 INFO] From: ../OpenNMT_Last_new/IWSLT_2016/english_french/BASELINE_IWSLT_16_en_fr.TOKENIZED.100l.vocab.pt
+[2019-05-16 12:17:08,441 INFO] 	* source vocab: 50002 words
+[2019-05-16 12:17:08,441 INFO] 	* target vocab: 50004 words
+[2019-05-16 12:17:34,177 INFO] Got 133012 encryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/word/en_fr_word.vec
+[2019-05-16 12:18:00,233 INFO] Got 133012 decryption embeddings from ../UnsupervisedMT/NMT/embeddings/en_fr/word/en_fr_word.vec
+[2019-05-16 12:18:02,608 INFO] 
+Matching: 
+[2019-05-16 12:18:02,608 INFO] 	* enc: 50000 match, 2 missing, (100.00%)
+[2019-05-16 12:18:02,608 INFO] 	* dec: 50001 match, 3 missing, (99.99%)
+[2019-05-16 12:18:02,608 INFO] 
+Filtered embeddings:
+[2019-05-16 12:18:02,609 INFO] 	* enc: torch.Size([50002, 512])
+[2019-05-16 12:18:02,609 INFO] 	* dec: torch.Size([50004, 512])
+[2019-05-16 12:18:02,610 INFO] 
+Saving embedding as:
+	* enc: IWSLT_2016/french_data/embeddings_transformer/fasttext_word_512.enc.pt
+	* dec: IWSLT_2016/french_data/embeddings_transformer/fasttext_word_512.dec.pt
+[2019-05-16 12:18:04,711 INFO] 
+Done.
