@@ -1,7 +1,7 @@
-# Unsupervised Machine Translation
+# Unsupervised Neural Machine Translation
 
-This repository contains the adapted implementation of the unsupervised PBSMT and NMT models presented in  
-[Phrase-Based & Neural Unsupervised Machine Translation](https://arxiv.org/abs/1804.07755) (EMNLP 2018). We have only added the option to include ReWE and ReSE in the training. For usage, follow the original documentation below, and just add the ReWE and ReSE arguments if you want to use the.
+This repository contains the adapted implementation of the unsupervised NMT models presented in  
+[Phrase-Based & Neural Unsupervised Machine Translation](https://arxiv.org/abs/1804.07755) (EMNLP 2018). We have only added the option to include ReWE and ReSE in the training. For usage, follow the original documentation below, and just add the ReWE and ReSE arguments if you want to use them.
 
 # Original Readme
 
