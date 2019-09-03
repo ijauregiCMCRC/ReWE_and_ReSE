@@ -66,8 +66,6 @@ python train.py -data data-path -save_model save-path -encoder_type brnn -rnn_ty
 
 The command above trains the model in the same way proposed by [(Denkowski and Neubig, 2018)](https://arxiv.org/abs/1706.09733), with simulated annealing and training until perplexity convergence.
 
-Finally, there is another option (-contrastive_B) to train the systen using only ReWE in the loss function, and ignoring the negative log-likelihood (NLL) loss (see paper Appendix C). 
-
 ### Step 3: Translate
 
 ```bash
