@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from torch.autograd import Variable
 import math
 
 from onmt.modules import Elementwise
@@ -21,11 +22,11 @@ class PositionalEncoding(nn.Module):
 
     def __init__(self, dropout, dim, max_len=5000):
         pe = torch.zeros(max_len, dim)
-        position = torch.arange(0, max_len).unsqueeze(1)
-        div_term = torch.exp((torch.arange(0, dim, 2) *
-                             -(math.log(10000.0) / dim)).float())
-        pe[:, 0::2] = torch.sin(position.float() * div_term)
-        pe[:, 1::2] = torch.cos(position.float() * div_term)
+        position = torch.arange(0., max_len).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0., dim, 2) *
+                             -(math.log(10000.0) / dim))
+        pe[:, 0::2] = torch.sin(position * div_term)
+        pe[:, 1::2] = torch.cos(position * div_term)
         pe = pe.unsqueeze(1)
         super(PositionalEncoding, self).__init__()
         self.register_buffer('pe', pe)
@@ -33,8 +34,11 @@ class PositionalEncoding(nn.Module):
         self.dim = dim
 
     def forward(self, emb):
+        # We must wrap the self.pe in Variable to compute, not the other
+        # way - unwrap emb(i.e. emb.data). Otherwise the computation
+        # wouldn't be watched to build the compute graph.
         emb = emb * math.sqrt(self.dim)
-        emb = emb + self.pe[:emb.size(0)]
+        emb = emb + Variable(self.pe[:emb.size(0)], requires_grad=False)
         emb = self.dropout(emb)
         return emb
 
@@ -81,7 +85,6 @@ class Embeddings(nn.Module):
                     `-feat_merge mlp`
         dropout (float): dropout probability.
     """
-
     def __init__(self, word_vec_size,
                  word_vocab_size,
                  word_padding_idx,
@@ -164,9 +167,6 @@ class Embeddings(nn.Module):
         if emb_file:
             pretrained = torch.load(emb_file)
             self.word_lut.weight.data.copy_(pretrained)
-            if fixed:
-                self.word_lut.weight.requires_grad = False
-        else:
             if fixed:
                 self.word_lut.weight.requires_grad = False
 

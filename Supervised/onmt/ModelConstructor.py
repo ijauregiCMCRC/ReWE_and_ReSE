@@ -15,7 +15,7 @@ from onmt.modules import Embeddings, ImageEncoder, CopyGenerator, \
     TransformerEncoder, TransformerDecoder, \
     CNNEncoder, CNNDecoder, AudioEncoder
 from onmt.Utils import use_gpu
-from torch.nn.init import xavier_uniform
+from torch.nn.init import xavier_uniform_ as xavier_uniform
 
 
 def make_embeddings(opt, word_dict, feature_dicts, for_encoder=True):
@@ -62,7 +62,7 @@ def make_encoder(opt, embeddings):
     """
     if opt.encoder_type == "transformer":
         return TransformerEncoder(opt.enc_layers, opt.rnn_size,
-                                  opt.dropout, embeddings)
+                                  opt.dropout, embeddings, opt.head_count)
     elif opt.encoder_type == "cnn":
         return CNNEncoder(opt.enc_layers, opt.rnn_size,
                           opt.cnn_kernel_width,
@@ -86,7 +86,7 @@ def make_decoder(opt, embeddings):
     if opt.decoder_type == "transformer":
         return TransformerDecoder(opt.dec_layers, opt.rnn_size,
                                   opt.global_attention, opt.copy_attn,
-                                  opt.dropout, embeddings)
+                                  opt.dropout, embeddings, opt.head_count)
     elif opt.decoder_type == "cnn":
         return CNNDecoder(opt.dec_layers, opt.rnn_size,
                           opt.global_attention, opt.copy_attn,
@@ -121,6 +121,8 @@ def load_test_model(opt, dummy_opt):
         checkpoint['vocab'], data_type=opt.data_type)
 
     model_opt = checkpoint['opt']
+    print(model_opt)
+    print(checkpoint['optim'])
     for arg in dummy_opt:
         if arg not in model_opt:
             model_opt.__dict__[arg] = dummy_opt[arg]
@@ -197,8 +199,18 @@ def make_base_model(model_opt, fields, gpu, checkpoint=None):
                 nn.Linear(model_opt.rnn_size, 200),nn.ReLU(),nn.Linear(200, model_opt.tgt_word_vec_size))#,
                 #nn.LogSoftmax(dim=-1))
         if model_opt.ReSE:
-            generator_ReSE = nn.Sequential(SelfAttention(model_opt.rnn_size),nn.Linear(model_opt.rnn_size, 200),nn.ReLU(),
-                                     nn.Linear(200,512))
+            # generator_ReSE = nn.Sequential(SelfAttention(model_opt.rnn_size),nn.Linear(model_opt.rnn_size, 200),nn.ReLU(),
+            #                          nn.Linear(200,512))
+            # Sentence embedding size
+            if model_opt.ReSE_type == "USE":
+                ReSE_emb_dim = 512
+            elif model_opt.ReSE_type == "sBERT":
+                ReSE_emb_dim = 768
+            elif model_opt.ReSE_type == "avgEmbs" or model_opt.ReSE_type == "maxpoolEmbs":
+                ReSE_emb_dim = model_opt.tgt_word_vec_size
+            generator_ReSE = nn.Sequential(SelfAttention(model_opt.rnn_size), nn.Linear(model_opt.rnn_size, 200),
+                                           nn.ReLU(),
+                                           nn.Linear(200, ReSE_emb_dim))
             #ReSE_gt = SelfAttention(model_opt.tgt_word_vec_size)
         if model_opt.share_decoder_embeddings:
             generator[0].weight = decoder.embeddings.word_lut.weight

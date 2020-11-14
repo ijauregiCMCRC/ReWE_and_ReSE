@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch
 import torch.cuda
-from onmt.Utils import get_logger
+from torch.autograd import Variable
 
 
 class MatrixTree(nn.Module):
@@ -12,7 +12,6 @@ class MatrixTree(nn.Module):
 
     :cite:`DBLP:journals/corr/LiuL17d`
     """
-
     def __init__(self, eps=1e-5):
         self.eps = eps
         super(MatrixTree, self).__init__()
@@ -22,7 +21,7 @@ class MatrixTree(nn.Module):
         output = input.clone()
         for b in range(input.size(0)):
             lap = laplacian[b].masked_fill(
-                torch.eye(input.size(1)).cuda().ne(0), 0)
+                Variable(torch.eye(input.size(1)).cuda().ne(0)), 0)
             lap = -lap + torch.diag(lap.sum(0))
             # store roots on diagonal
             lap[0] = input[b].diag().exp()
@@ -42,8 +41,7 @@ class MatrixTree(nn.Module):
 
 
 if __name__ == "__main__":
-    logger = get_logger('StructuredAttention.log')
     dtree = MatrixTree()
     q = torch.rand(1, 5, 5).cuda()
-    marg = dtree.forward(q)
-    logger.info(marg.sum(1))
+    marg = dtree.forward(Variable(q))
+    print(marg.sum(1))

@@ -101,6 +101,8 @@ def model_opts(parser):
                        choices=['dot', 'general', 'mlp'],
                        help="""The attention type to use:
                        dotprod or general (Luong) or MLP (Bahdanau)""")
+    group.add_argument('-head_count', type=int, default=6,
+                       help="""Number of heads.""")
 
     # Genenerator and loss options.
     group.add_argument('-copy_attn', action="store_true",
@@ -123,6 +125,9 @@ def model_opts(parser):
                        help='Alpha to combine ReWE loss with NLL.')
     group.add_argument('-alpha_loss_ReSE', type=float, default=0.1,
                        help='Alpha to combine ReSE loss with NLL.')
+    group.add_argument('-ReSE_type', type=str, default='USE',
+                       choices=['USE', 'sBERT', 'maxpoolEmbs', 'avgEmbs'],
+                       help='Ground truth sentence embedding.')
 
 
 def preprocess_opts(parser):

@@ -16,8 +16,9 @@ import onmt
 import onmt.io
 import tensorflow as tf
 import tensorflow_hub as hub
+from sentence_transformers import SentenceTransformer
 import re
-
+from onmt.io.DatasetBase import PAD_WORD
 
 class LossComputeBase(nn.Module):
     """
@@ -166,15 +167,15 @@ class NMTLossCompute(LossComputeBase):
 
     def __init__(self, generator, tgt_vocab, normalization="sents",
                  label_smoothing=0.0, ReWE=False, ReSE=False, generator_ReWE=None, generator_ReSE=None, dec_embeddings=None,
-                 alpha_loss_ReWE=None, alpha_loss_ReSE=None, tgt_emb_size=None):
+                 alpha_loss_ReWE=None, alpha_loss_ReSE=None, tgt_emb_size=None, ReSE_type='USE', device=-1):
         super(NMTLossCompute, self).__init__(generator, tgt_vocab)
         assert (label_smoothing >= 0.0 and label_smoothing <= 1.0)
         if label_smoothing > 0:
             # When label smoothing is turned on,
             # KL-divergence between q_{smoothed ground truth prob.}(w)
             # and p_{prob. computed by model}(w) is minimized.
-            # If label smoothing value is set to zero, the loss
-            # is equivalent to NLLLoss or CrossEntropyLoss.
+            # If label smoothing value is set to zero, the losshhhhhhh
+            # is equivalent to NLLLoss or CrossEntropyLoss.hhhh
             # All non-true labels are uniformly set to low-confidence.
             self.criterion = nn.KLDivLoss(size_average=False)
             one_hot = torch.randn(1, len(tgt_vocab))
@@ -186,8 +187,13 @@ class NMTLossCompute(LossComputeBase):
             weight[self.padding_idx] = 0
             self.criterion = nn.NLLLoss(weight, size_average=False)
         self.confidence = 1.0 - label_smoothing
+        if device >= 0:
+            self.device = 'cuda:'+str(device)
+        else:
+            self.device = 'cpu'
         self.ReWE=ReWE
         self.ReSE=ReSE
+        self.ReSE_type = ReSE_type
         if ReWE:
             self.generator_ReWE = generator_ReWE
             self.dec_embeddings = dec_embeddings
@@ -196,15 +202,18 @@ class NMTLossCompute(LossComputeBase):
             self.criterion_ReWE = nn.CosineEmbeddingLoss(size_average=False)
         if ReSE:
             self.generator_ReSE = generator_ReSE
-            g = tf.Graph()
-            with g.as_default():
-                self.messages = tf.placeholder(dtype=tf.string, shape=[None])
-                self.embed = hub.Module("../ReSE/universal_sentence_encoder")
-                self.embeddings = self.embed(self.messages)
-                init_op = tf.group([tf.global_variables_initializer(), tf.tables_initializer()])
-            g.finalize()
-            self.sess = tf.Session(graph=g)
-            self.sess.run(init_op)
+            if self.ReSE_type == 'USE':
+                g = tf.Graph()
+                with g.as_default():
+                    self.messages = tf.placeholder(dtype=tf.string, shape=[None])
+                    self.embed = hub.Module("universal_sentence_encoder")
+                    self.embeddings = self.embed(self.messages)
+                    init_op = tf.group([tf.global_variables_initializer(), tf.tables_initializer()])
+                g.finalize()
+                self.sess = tf.Session(graph=g)
+                self.sess.run(init_op)
+            elif self.ReSE_type == 'sBERT':
+                self.sBERT_model = SentenceTransformer('bert-base-nli-mean-tokens')
             self.dec_embeddings = dec_embeddings
             self.tgt_emb_size = tgt_emb_size
             self.alpha_loss_ReSE = alpha_loss_ReSE
@@ -225,7 +234,10 @@ class NMTLossCompute(LossComputeBase):
         for i in range(batch_len):
             list_sent = []
             for j in range(sen_len):
-                list_sent.append(self.tgt_vocab.itos[target_IDs[j,i]])
+                word = self.tgt_vocab.itos[target_IDs[j, i]]
+                if word == PAD_WORD:
+                    break
+                list_sent.append(word)
             list_sent = " ".join(list_sent)
             list_batch.append(list_sent)
         return list_batch
@@ -235,7 +247,7 @@ class NMTLossCompute(LossComputeBase):
         for s in sent:
             #print ('trueeeeeeeee')
             sen = re.sub(r'(@@ )|(@@ ?$)','',s)
-            new_list.append(s)
+            new_list.append(sen)
         return new_list
 
     def _compute_loss(self, batch, output, target):
@@ -261,19 +273,32 @@ class NMTLossCompute(LossComputeBase):
         if self.ReSE:
             sen_vecs = self.generator_ReSE(output.transpose(0,1))
             target_dim = target.unsqueeze(2)
-            #print (target_dim.size())
+            with torch.no_grad():
+                embeddings_tgt=self.dec_embeddings(target_dim)
+            # print (embeddings_tgt.size())
             # with torch.no_grad():
             #     embeddings_tgt = self.dec_embeddings(target_dim)
             # sen_gt_embs = self.ReSE_gt(embeddings_tgt.transpose(0,1))
-            sentString = self.idSEQ2strSEQ(target)
-            if True:
+            if self.ReSE_type == 'USE' or self.ReSE_type == 'sBERT':
+                sentString = self.idSEQ2strSEQ(target)
                 sentString = self.process_bpe(sentString)
-            list_embs = []
-            for sen in sentString:
-                new_embedding = self.sess.run(self.embeddings, feed_dict={self.messages: [sen]})
-                new_embedding = torch.from_numpy(new_embedding)
-                list_embs.append(new_embedding)
-            sen_gt_embs = torch.stack(list_embs).squeeze().cuda()
+                list_embs = []
+                for sen in sentString:
+                    if self.ReSE_type == 'USE':
+                        new_embedding = self.sess.run(self.embeddings, feed_dict={self.messages: [sen]})
+                        new_embedding = torch.from_numpy(new_embedding[0])
+                    elif self.ReSE_type == 'sBERT':
+                        new_embedding = self.sBERT_model.encode(sen, show_progress_bar=False)
+                        new_embedding = torch.from_numpy(new_embedding[0])
+                    list_embs.append(new_embedding)
+                sen_gt_embs = torch.stack(list_embs).squeeze().cuda()
+            elif self.ReSE_type == 'avgEmbs':
+                sen_gt_embs = embeddings_tgt.mean(0)
+            elif self.ReSE_type == 'maxpoolEmbs':
+                embeddings_tgt_int = embeddings_tgt.permute(1, 2, 0)
+                _, _, dim = embeddings_tgt_int.size()
+                pool_layer = nn.MaxPool1d(dim)
+                sen_gt_embs = pool_layer(embeddings_tgt_int).squeeze()
             if len(sen_gt_embs.size())<2:
                 sen_gt_embs = sen_gt_embs.unsqueeze(dim=0)
             #print (sen_gt_embs.size())
@@ -296,25 +321,25 @@ class NMTLossCompute(LossComputeBase):
             #Loss 1
             loss_NLL= self.criterion(scores, gtruth)
             #Loss 2
-            loss_ReWE = self.criterion_ReWE(scores_reg, gtruth_emb,torch.tensor(1, dtype=torch.float,device='cuda:0')) #Cosine loss
+            loss_ReWE = self.criterion_ReWE(scores_reg, gtruth_emb,torch.tensor(1, dtype=torch.float,device=self.device)) #Cosine loss
             #Combined loss
             loss = loss_NLL + self.alpha_loss_ReWE*loss_ReWE
         elif self.ReWE==False and self.ReSE==True:
             # Loss 1
             loss_NLL = self.criterion(scores, gtruth)
             # Loss 2
-            loss_ReSE = self.criterion_ReSE(sen_vecs, sen_gt_embs, torch.tensor(1, dtype=torch.float,device='cuda:0'))  # Cosine loss
+            loss_ReSE = self.criterion_ReSE(sen_vecs, sen_gt_embs, torch.tensor(1, dtype=torch.float,device=self.device))  # Cosine loss
             #Combined loss
             loss = loss_NLL + self.alpha_loss_ReSE * loss_ReSE
         elif self.ReWE==True and self.ReSE==True:
             #Loss 1
             loss_NLL = self.criterion(scores, gtruth)
             #Loss 2
-            loss_ReWE = self.criterion_ReWE(scores_reg, gtruth_emb,torch.tensor(1, dtype=torch.float, device='cuda:0'))  # Cosine loss
+            loss_ReWE = self.criterion_ReWE(scores_reg, gtruth_emb,torch.tensor(1, dtype=torch.float, device=self.device))  # Cosine loss
             #Loss 3
             #print (sen_vecs.size())
             #print (sen_gt_embs.size())
-            loss_ReSE = self.criterion_ReSE(sen_vecs, sen_gt_embs,torch.tensor(1, dtype=torch.float, device='cuda:0'))  # Cosine loss
+            loss_ReSE = self.criterion_ReSE(sen_vecs, sen_gt_embs,torch.tensor(1, dtype=torch.float, device=self.device))  # Cosine loss
             #Combined loss
             loss = loss_NLL + self.alpha_loss_ReWE*loss_ReWE + self.alpha_loss_ReSE * loss_ReSE
         else:

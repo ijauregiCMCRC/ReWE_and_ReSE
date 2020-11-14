@@ -279,7 +279,8 @@ class Trainer(object):
         # Set model in training mode.
         self.model.train()
 
-    def train(self, train_iter, epoch, report_func=None):
+    def train(self, train_iter, epoch, report_func=None, model_opt=None,
+              start=None):
         """ Train next epoch.
         Args:
             train_iter: training data iterator
@@ -308,6 +309,9 @@ class Trainer(object):
             cur_dataset = train_iter.get_cur_dataset()
             self.train_loss.cur_dataset = cur_dataset
 
+            if i == 600:
+                print(batch.src[0].size())
+
             true_batchs.append(batch)
             accum += 1
             if self.norm_method == "tokens":
@@ -322,18 +326,25 @@ class Trainer(object):
                     true_batchs, total_stats,
                     report_stats, normalization)
 
-                if report_func is not None:
-                    report_stats = report_func(
-                        epoch, idx, num_batches,
-                        self.progress_step,
-                        total_stats.start_time, self.optim.lr,
-                        report_stats)
-                    self.progress_step += 1
+                # if report_func is not None:
+                #     report_stats = report_func(
+                #         epoch, idx, num_batches,
+                #         self.progress_step,
+                #         total_stats.start_time, self.optim.lr,
+                #         report_stats)
+                #     self.progress_step += 1
 
                 true_batchs = []
                 accum = 0
                 normalization = 0
                 idx += 1
+
+            if (i + 1) % 50 == 0:
+                if model_opt.batch_type == 'sents':
+                    msg = report_stats.output(epoch, i, num_batches, start)
+                else:
+                    msg = report_stats.output(epoch, i, 0000, start)
+                print(msg)
 
         if len(true_batchs) > 0:
             self._gradient_accumulation(
