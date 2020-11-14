@@ -61,7 +61,7 @@ can also add `-gpuid 1` to use (say) GPU 1.
 If you want to reproduce the results from the paper using ReWE and ReSE together, you need to add the following aguments to the above command:
 
 ```bash
-python train.py -data data-path -save_model save-path -encoder_type brnn -rnn_type LSTM -rnn_size 1024 -word_vec_size 300 -global_attention mlp -optim adam  -learning_rate 0.0002 -neubig_style_training True -pre_word_vecs_enc pre-trained-file-enc -pre_word_vecs_dec pre-trained-file-dec -gpuid 0 -seed 1 -ReWE True -lamda_ReWE_loss 20 -ReSE True -lambda_ReSE_loss 100
+python train.py -data data-path -save_model save-path -encoder_type brnn -rnn_type LSTM -rnn_size 1024 -word_vec_size 300 -global_attention mlp -optim adam  -learning_rate 0.0002 -neubig_style_training True -pre_word_vecs_enc pre-trained-file-enc -pre_word_vecs_dec pre-trained-file-dec -gpuid 0 -seed 1 -ReWE True -alpha_loss_ReWE 20 -ReSE True -alpha_loss_ReSE 100 -ReSE_type USE
 ```
 
 The command above trains the model in the same way proposed by [(Denkowski and Neubig, 2018)](https://arxiv.org/abs/1706.09733), with simulated annealing and training until perplexity convergence.
